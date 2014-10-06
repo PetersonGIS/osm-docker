@@ -2,6 +2,6 @@
 "cachedir": "/opt/OSM/cache",
 "connection": "postgis://docker:docker@192.168.59.103:5432/docker",
 "-dbschema-production": "public",
-"mapping": "/Users/Juan/Development/imposm/mapping-shop.json"
+"mapping": "mapping-shop.json"
 }
 

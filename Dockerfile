@@ -49,7 +49,7 @@ RUN mkdir -p /opt/osm/replication
 WORKDIR /opt/osm/replication
 ADD config-shop.json /opt/osm/replication/config-shop.json
 ADD mapping-shop.json /opt/osm/replication/mapping-shop.json
-ADD maryland-latest.osm.pbf /opt/osm/replication/maryland-latest.osm.pbf
+ADD district-of-columbia-latest.osm.pbf /opt/osm/replication/district-of-columbia-latest.osm.pbf
 
 CMD ["/usr/bin/supervisord", "/bin/bash"]
 
