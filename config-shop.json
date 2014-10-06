@@ -1,0 +1,7 @@
+{
+"cachedir": "/opt/OSM/cache",
+"connection": "postgis://osm:osm@192.168.59.103:5432/osm",
+"-dbschema-production": "public",
+"mapping": "/Users/Juan/Development/imposm/mapping-shop.json"
+}
+
