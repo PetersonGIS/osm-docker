@@ -1,6 +1,6 @@
 {
 "cachedir": "/opt/OSM/cache",
-"connection": "postgis://docker:docker@192.168.59.103:5432/docker",
+"connection": "postgis://postgres:password@192.168.1.73:5432/osm",
 "-dbschema-production": "public",
 "mapping": "mapping-shop.json"
 }
