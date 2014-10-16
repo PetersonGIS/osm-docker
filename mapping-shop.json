@@ -1,34 +1,80 @@
-{
-  "tables": {
-	  "shop": {
-		  "fields": [
-			  {
-				  "type": "id",
-					"name": "osm_id",
-					"key": null
-				},
-				{
-				  "type": "geometry",
-					"name": "geometry",
-					"key": null
-				},
-				{
-				  "type": "string",
-					"name": "name",
-					"key": "name"
-				},
-				{
-				  "type": "mapping_value",
-					"name": "type",
-					"type": null
-				}
-			],
-			"type": "point",
-			"mapping": {
-			  "shop":[
-					"__any__"			
-				]
-			}
+{ 
+    "tables": {
+        "landusages": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "osm_id",
+                    "key": null
+                },
+                {
+                    "type": "geometry",
+                    "name": "geometry",
+                    "key": null
+                },
+                {
+                    "type": "string",
+                    "name": "name",
+                    "key": "name"
+                },
+                {
+                    "type": "mapping_value",
+                    "name": "type",
+                    "key": null
+                },
+                {
+                    "type": "pseudoarea",
+                    "name": "area",
+                    "key": null
+                },
+                {
+                    "args": {
+                        "ranks": [
+							"hospital" ]
+                    },
+                    "type": "zorder",
+                    "name": "z_order",
+                    "key": "z_order"
+                }
+            ],
+            "type": "polygon",
+            "mapping": {
+                "amenity": [
+                    "hospital"
+                ]
+            }
+        },                    
+		"amenities": {
+            "fields": [
+                {
+                    "type": "id",
+                    "name": "osm_id",
+                    "key": null
+                },
+                {
+                    "type": "geometry",
+                    "name": "geometry",
+                    "key": null
+                },
+                {
+                    "type": "string",
+                    "name": "name",
+                    "key": "name"
+                },
+                {
+                    "type": "mapping_value",
+                    "name": "type",
+                    "key": null
+                }
+            ],
+            "type": "point",
+            "mapping": {
+                "amenity": [
+                    "hospital"
+                ]
+            	}
 		}
 	}
 }
+       
+	               
